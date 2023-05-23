@@ -9,7 +9,7 @@
 
                     <div class="card-body">
                         @isset($url)
-                            <form method="POST" action="{{ url("register/$url")}}">
+                            <form method="POST" action="{{ url('register/$url')}}">
                                 @else
                                     <form method="POST" action="{{ route('register') }}">
                                         @endisset
